@@ -17,14 +17,14 @@ class SchellingAgent():
 
          Args:
             pos: (x, y) Agent initial location.
-            grid: a grid of the city, where 0=empty, 1=minority, 2=majority 
-            agent_type: Indicator for the agent's type (minority=1, majority=2)
+            grid: a grid of the city, where 0=empty, 1=minority, 2=majority, 3= medium 
+            agent_type: Indicator for the agent's type (minority=1, majority=2,medium=3)
         '''
         self.pos = pos
         self.grid = grid
         self.type = agent_type
         
-        self.grid[pos[0]][pos[1]] = self.type
+        self.grid[pos[0]][pos[1]]= self.type
         
     
     def calculate_similarity(self):
